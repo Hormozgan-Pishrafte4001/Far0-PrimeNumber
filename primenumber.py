@@ -6,9 +6,7 @@ class PrimeNumber:
         if not isinstance(number, (int, list)):
             raise TypeError('Number is not integer nor list')
         if isinstance(number, list):
-            result = []
-            for num in number:
-                result.append(self.isprime(num))
+            result = tuple(map(self.isprime, number))
             return result
 
         if number in self.nonpnumber:
@@ -17,13 +15,12 @@ class PrimeNumber:
 
             return True
 
-        for i in range(2, number):
-            if number % i == 0:
-                self.nonpnumber.append(number)
-                return False
-
-        self.pnumber.append(number)
-        return True
+        if any(map(lambda i: number % i == 0, range(2, number))):
+            self.nonpnumber.append(number)
+            return False
+        else:
+            self.pnumber.append(number)
+            return True
 
 
 obj = PrimeNumber()
