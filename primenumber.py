@@ -34,13 +34,13 @@ class PrimeNumber:
             return True
 
 
-    def countprime(self, start, end):
+    def countprime(self, end, start=0):
         count = 0
         for i in range(start+1, end):
             if self.isprime(i):
                 count += 1
         return count
-
+    
 
 
 
