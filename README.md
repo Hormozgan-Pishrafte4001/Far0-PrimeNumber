@@ -15,6 +15,7 @@ You can watch records of these classes in [this PeerTube channel](https://peertu
  - Salime Daryanavard: `isprime()` function
  - Neda Nazifi: `PrimeNumber` class
  - Kimiya Mohazzabi : add the functionality to `isprime()` to accept list of numbers and converting for loops to map
+ - Erfan Bagheri:   Add `countprime(start, end)` and `countprime(end)` 
 
 ## ToDos
 
@@ -27,8 +28,8 @@ You can watch records of these classes in [this PeerTube channel](https://peertu
  - [x] Make `isprime()` use `map()` for single prime number check.
  - [x] Make `isprime()` use `map()` for multiple prime number check.
  - [x] Make `PrimeNumber` use Python `set`s for storing checked numbers. Compare the performance with `list`.
- - [ ] Write `countprime(end)` method returning the number of all primes smaller than `end`
- - [ ] Write `countprime(start, end)` method returning the number of all primes between `start` and `end`
+ - [x] Write `countprime(end)` method returning the number of all primes smaller than `end`
+ - [x] Write `countprime(start, end)` method returning the number of all primes between `start` and `end`
  - [ ] Write `iterprime(start=2, end)` yielding prime numbers from `start` to `end-1`
  - [ ] Write `range(start=2, end)` method returning a `PrimeRange` instance.
 
