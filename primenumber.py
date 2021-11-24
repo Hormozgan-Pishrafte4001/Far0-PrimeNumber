@@ -2,7 +2,7 @@
 """
 Created on Wed Nov 17 14:26:26 2021
 
-@author: touhidiali
+@author: erfan 
 """
 
 class PrimeNumber:
@@ -34,7 +34,21 @@ class PrimeNumber:
             return True
 
 
+    def countprime(self, start, end):
+        count = 0
+        for i in range(start+1, end):
+            if self.isprime(i):
+                count += 1
+        return count
+
+
+
+
+
+
+
 obj = PrimeNumber()
 print(obj.isprime([2, 3, 4, 5, 6, 7]))
 print(obj.isprime(13))
 print(obj.isprime(16))
+print(obj.countprime(5,30))
