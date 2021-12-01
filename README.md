@@ -16,7 +16,7 @@ You can watch records of these classes in [this PeerTube channel](https://peertu
  - Neda Nazifi: `PrimeNumber` class
  - Kimiya Mohazzabi : add the functionality to `isprime()` to accept list of numbers and converting for loops to map
  - Erfan Bagheri: Add `countprime(start, end)` and `countprime(end)` 
- - Ali Touhidi
+ - Ali Touhidi: Make `isprime()` raise `ValueError` if number is `<= 0` and using sets.
  - Farooq Karimi Zadeh: Add the functionallity to accept any ordered container.
 
 ## ToDos
